@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai tập</title>
+</head>
+<body>
+<input type="Number" id="num">
+<button onclick="mycheck()">kiểm tra</button>
+<p id="result"></p>
+<script>
+    function mycheck() {
+        let num = document.getElementById('num').value;
+        let sum = 0;
+        for (let i = 0; i < num; i++) {
+            sum += i;
+        }
+        alert(sum);
+    }
+
+
+</script>
+</body>
+</html>

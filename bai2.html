@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài 2</title>
+</head>
+<body>
+<input type="number" id="number">
+<button onclick="tinh()">tính</button>
+<!--<p id="result"></p>-->
+<script>
+    function tinh() {
+        let sum = 0;
+        let number= document.getElementById('number').value
+        for (let i = 0; i <= number; i++) {
+            sum += Math.pow(i,2);
+        }
+        alert(sum);
+    }
+    tinh();
+</script>
+</body>
+</html>
