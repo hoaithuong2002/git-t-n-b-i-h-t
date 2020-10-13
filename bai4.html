@@ -1,10 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Tính Tích số nguyên dương</title>
 </head>
 <body>
-$END$
+<input type="text" id="soa"> *
+<input type="text" id="sob">
+<button onclick="tinh_tich()">tính tích</button>
+<p id="result"></p>
+<script>
+    function tinh_tich(){
+        let a = document.getElementById('soa').value;
+        let b = document.getElementById('sob').value;;
+        c = parseInt(a) * parseInt(b);
+        document.getElementById('result').innerHTML = a + " * " + b + " = " +c;
+    }
+</script>
 </body>
 </html>
