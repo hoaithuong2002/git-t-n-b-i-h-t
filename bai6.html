@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>giao diện</title>
+</head>
+<body>
+<form name="linearniFunkce" action="javascript:LinearniFce()">
+
+    <h2>Bảng tính</h2>
+    <h3 id="error1">Hãy đưa ra biến số</h3>
+    <div>
+        <input type="tel" value="a" id="a"> <span class="prom">x</span> +
+        <input type="tel" value="b" id="b"> = <input type="tel" value="0"
+                                                     name="c"><br>
+    </div>
+    <p>Làm tròn <input type="tel" id="desMista" value="2" class="desMista"> số thập phân</p>
+
+    <input type="button" onclick="printResult()" value="hãy tính toán"><input type="reset" value="Xóa nội dung">
+    <br>
+    <br>
+    <span>x</span> = <p id="ketqua"></p>
+
+</form>
+<script>
+    function printResult() {
+
+        let a = document.getElementById('a').value;
+        let b = document.getElementById('b').value;
+        let x = 0;
+        x = -b / a;
+        document.getElementById('ketqua').innerHTML = x;
+
+    }
+</script>
+
+
+</body>
+</html>
